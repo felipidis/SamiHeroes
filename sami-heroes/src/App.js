@@ -1,7 +1,12 @@
+import React from 'react'
+import Home from './pages/Home'
+import GlobalStyle from './styles/global'
+
 function App() {
 	return (
 		<div>
-			<h1>TESTANDO</h1>
+			<GlobalStyle />
+			<Home />
 		</div>
 	)
 }
