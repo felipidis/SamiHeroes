@@ -1,10 +1,21 @@
 import React from 'react'
-import { Container } from './styles'
-
-function Header() {
+import { Container, Title, SearchContainer } from './styles'
+import { BiSearchAlt } from 'react-icons/bi'
+function Header({ value, onChange, onClick }) {
 	return (
 		<Container>
-			<h1>SAMI HEROES</h1>
+			<Title>SAMI HEROES</Title>
+			<SearchContainer>
+				<input
+					type='text'
+					value={value}
+					onChange={onChange}
+					placeholder='Ex: Asa Noturna'
+				/>
+				<button onClick={onClick}>
+					<BiSearchAlt size={25} />
+				</button>
+			</SearchContainer>
 		</Container>
 	)
 }
