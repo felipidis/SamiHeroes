@@ -25,7 +25,6 @@ function Home() {
 					break
 				}
 				const response = await api.get(i.toString())
-				console.log(response.data)
 				setHeroes((array) => [...array, response.data])
 				i++
 			}
