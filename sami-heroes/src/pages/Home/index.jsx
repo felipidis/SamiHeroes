@@ -35,10 +35,6 @@ function Home() {
 		fetchData()
 	}, [currentPage])
 
-	useEffect(() => {
-		console.log('AE PORRA', heroesSearched)
-	}, [heroesSearched])
-
 	function handleLoadMoreHeroes() {
 		setCurrentPage(currentPage + 1)
 		setIsLoading(true)
